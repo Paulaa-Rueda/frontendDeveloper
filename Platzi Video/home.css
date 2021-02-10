@@ -1,0 +1,128 @@
+body {
+  margin: 0px;
+
+  background: hsla(152, 100%, 50%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  font-family: "arial";
+  outline: none;
+}
+.header {
+  background: hsla(152, 100%, 50%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  width: 100%;
+  height: 80px;
+  /* displau flex es para ubicar los elementos y su propiedad es space.between que significa que va 
+    a existir un espacio entre un elemento y otro  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 350px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.header__menu {
+  margin-right: 60px;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px 10px;
+}
+/* hover, es para que aparezca el menu cuando pasa el mouse por la palabra perfil  */
+.header__menu:hover ul,
+ul:hover {
+  display: block;
+}
+.header__menu li {
+  margin: 10px 0px;
+}
+.header__menu li a {
+  color: white;
+  /* para quitar la linea que nos sale en el texto  */
+  text-decoration: none;
+  font-size: 15px;
+}
+/* Esto se hace para que cuando se despliega el menú y pasamos el mouse por 
+una de las opciones nos aparezca una linea debajo del texto */
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+.header__menu p {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  margin: 40px 6px;
+}
+
+.header__menu--profile {
+  margin-right: 60px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+.header__menu--profile img {
+  margin-top: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.main {
+  height: 300px;
+}
+.main__title {
+  color: rgb(254, 255, 255);
+  margin-top: 120px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  outline: none;
+}
+
+.input {
+
+
+  border: 2px solid #20FAAF;
+  border-radius: 25px;
+  color: black;
+  font-family: "Arial";
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  margin-left: 260px;
+  outline: none;
+}
+
+::placeholder{
+  color: grey;
+}
